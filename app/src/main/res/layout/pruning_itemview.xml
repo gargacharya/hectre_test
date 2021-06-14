@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/m15dp"
+    app:cardCornerRadius="@dimen/m5dp"
+    app:cardElevation="@dimen/m10dp">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/linen"
+            android:padding="@dimen/m15dp">
+            
+            <TextView
+                android:id="@+id/tvJobName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/pruning"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ts20sp"
+                android:textStyle="bold" />
+            
+            <TextView
+                android:id="@+id/tvAddMaxTrees"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/tv_bg_border"
+                android:paddingHorizontal="@dimen/m10dp"
+                android:paddingVertical="@dimen/m5dp"
+                android:text="@string/add_max_trees"
+                android:textColor="@color/mypink"
+                android:textSize="12sp" />
+        
+        </RelativeLayout>
+        
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPruningStaff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

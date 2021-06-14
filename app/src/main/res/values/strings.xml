@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">HectreTest</string>
+    <string name="update_rate_amp_volume"><![CDATA[Update Rate & Volume]]></string>
+    <string name="pruning">Pruning</string>
+    <string name="add_max_trees">ADD MAX TREES</string>
+    <string name="orchard">Orchard</string>
+    <string name="block">Block</string>
+    <string name="rate_type">Rate Type</string>
+    <string name="piece_rate">PIECE RATE</string>
+    <string name="wages">WAGES</string>
+    <string name="dollar">$</string>
+    <string name="hour">/hour</string>
+    <string name="rate">Rate</string>
+    <string name="apply_to_all">Apply to All</string>
+</resources>

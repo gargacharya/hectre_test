@@ -1,0 +1,109 @@
+{
+  "data": [
+    {
+      "jobName": "Pruning",
+      "jobId": 1,
+      "jobDetails": {
+        "staff": [
+          {
+            "firstName": "Berco",
+            "lastName": "Smith",
+            "initial": "B",
+            "orchard": "Benji(V1394U)",
+            "block": "UB13",
+            "rateType": "Piece",
+            "ratePerHour": 30,
+            "treeRows": [
+              {
+                "rowNo": "3",
+                "totalTreeCount": 100,
+                "workDone": 3,
+                "prevStaffName": "",
+                "prevWorkDone": 0
+              },
+              {
+                "rowNo": "4",
+                "totalTreeCount": 566,
+                "workDone": 3,
+                "prevStaffName": "Yi Wan",
+                "prevWorkDone": 200
+              }
+            ]
+          },
+          {
+            "firstName": "Henry",
+            "lastName": "Pham",
+            "initial": "H",
+            "orchard": "Benji(V1394U)",
+            "block": "UB13",
+            "rateType": "Piece",
+            "ratePerHour": 37,
+            "treeRows": [
+              {
+                "rowNo": "3",
+                "totalTreeCount": 100,
+                "workDone": 3,
+                "prevStaffName": "",
+                "prevWorkDone": 0
+              },
+              {
+                "rowNo": "4",
+                "totalTreeCount": 566,
+                "workDone": 3,
+                "prevStaffName": "Yi Wan",
+                "prevWorkDone": 200
+              },
+              {
+                "rowNo": "5",
+                "totalTreeCount": 270,
+                "workDone": 20,
+                "prevStaffName": "Elizabeth Jargrave",
+                "prevWorkDone": 100
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "jobName": "Thinning",
+      "jobId": 2,
+      "jobDetails": {
+        "staff": [
+          {
+            "firstName": "Darijan",
+            "lastName": "Brown",
+            "initial": "D",
+            "orchard": "Benji(V1394U)",
+            "block": "UB13",
+            "rateType": "Piece",
+            "ratePerHour": 60,
+            "treeRows": [
+              {
+                "rowNo": "3",
+                "totalTreeCount": 100,
+                "workDone": 3,
+                "prevStaffName": "",
+                "prevWorkDone": 0
+              },
+              {
+                "rowNo": "4",
+                "totalTreeCount": 566,
+                "workDone": 3,
+                "prevStaffName": "Yi Wan",
+                "prevWorkDone": 200
+              },
+              {
+                "rowNo": "5",
+                "totalTreeCount": 270,
+                "workDone": 20,
+                "prevStaffName": "Elizabeth Jargrave",
+                "prevWorkDone": 100
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

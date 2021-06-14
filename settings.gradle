@@ -1,0 +1,2 @@
+rootProject.name = "HectreTest"
+include ':app'

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/m15dp"
+        android:paddingTop="@dimen/m20dp">
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tvStaffInitial"
+                style="@style/InitalView"
+                android:backgroundTint="@color/mypink"
+                android:textSize="@dimen/ts20sp" />
+            
+            <TextView
+                android:id="@+id/tvStaffName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/m10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ts18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/orchard"
+                android:textColor="@color/silver"
+                android:textSize="@dimen/ts13sp" />
+            
+            <TextView
+                android:id="@+id/tvStaffOrchard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/m10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ts13sp" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/block"
+                android:textColor="@color/silver"
+                android:textSize="@dimen/ts13sp" />
+            
+            <TextView
+                android:id="@+id/tvStaffBlock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/m10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ts13sp" />
+        </LinearLayout>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/m15dp"
+            android:text="@string/rate_type"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ts18sp"
+            android:textStyle="bold" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/m10dp"
+            android:weightSum="2">
+            
+            <TextView
+                android:id="@+id/tvPieceRate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rate_type_bg"
+                android:paddingVertical="@dimen/m15dp"
+                android:text="@string/piece_rate"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ts14sp"
+                android:textStyle="bold" />
+            
+            <TextView
+                android:id="@+id/tvWages"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/m10dp"
+                android:layout_weight="1"
+                android:background="@drawable/rate_type_bg"
+                android:paddingVertical="@dimen/m15dp"
+                android:text="@string/wages"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ts14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        
+        <RelativeLayout
+            android:id="@+id/rlRateView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/m10dp">
+            
+            
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/tvApplyToAll">
+                
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/m15dp"
+                    android:background="@drawable/tv_bg_border"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    
+                    <TextView
+                        android:id="@+id/tvDollerSign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginHorizontal="@dimen/m10dp"
+                        android:text="@string/dollar"
+                        android:textSize="@dimen/ts15sp" />
+                    
+                    <EditText
+                        android:id="@+id/etRate"
+                        style="@style/editTextStyle"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/tvPerHour"
+                        android:layout_toEndOf="@+id/tvDollerSign" />
+                    
+                    <TextView
+                        android:id="@+id/tvPerHour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginHorizontal="@dimen/m10dp"
+                        android:text="@string/hour"
+                        android:textSize="@dimen/ts15sp" />
+                </RelativeLayout>
+                
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/m20dp"
+                    android:layout_marginTop="@dimen/m6dp"
+                    android:background="@color/white"
+                    android:paddingHorizontal="@dimen/m5dp"
+                    android:text="@string/rate" />
+            </RelativeLayout>
+            
+            <TextView
+                android:id="@+id/tvApplyToAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/m10dp"
+                android:text="@string/apply_to_all"
+                android:textAllCaps="true"
+                android:textColor="@color/contessa"
+                android:textSize="@dimen/ts15sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        
+        <TextView
+            android:id="@+id/tvWagesViewMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/m10dp"
+            android:textColor="@color/goldengrass"
+            android:textSize="@dimen/ts15sp" />
+        
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTreeRows"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/m15dp" />
+        
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTreeRowsDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/m15dp"
+            android:nestedScrollingEnabled="false" />
+    
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m1dp"
+        android:layout_marginHorizontal="@dimen/m10dp"
+        android:layout_marginTop="@dimen/m15dp"
+        android:background="@color/silver" />
+
+</LinearLayout>
